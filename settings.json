@@ -1,122 +1,126 @@
 {
-    // EDITOR
-    "editor.formatOnSave": true,
-    "editor.fontSize": 12.7,
-    "explorer.confirmDelete": false,
-    "terminal.external.osxExec": "iTerm2.app",
-    "terminal.integrated.gpuAcceleration": "off",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnPaste": true,
+  // EDITOR
+  "editor.formatOnSave": true,
+  "editor.fontSize": 12.7,
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDelete": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.external.osxExec": "iTerm2.app",
+  "terminal.integrated.gpuAcceleration": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnPaste": true,
+  // Emmet
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.bracketSameLine": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  // NPM
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.importLinebreak": ";\r\n",
+  // Html
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    // Emmet
-    "emmet.includeLanguages": {
-        "liquid": "html"
-    },
-    "prettier.jsxSingleQuote": true,
-    "prettier.semi": true,
-    "prettier.singleQuote": true,
-    "prettier.bracketSameLine": true,
-    "prettier.vueIndentScriptAndStyle": true,
-    // NPM
-    "npm-intellisense.importQuotes": "'",
-    "npm-intellisense.importLinebreak": ";\r\n",
-    // Html
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": false
-        }
-    },
-    // Shopify
-    "shopifyLiquid.disableWindowsWarning": false,
-    "[liquid]": {
-        "editor.defaultFormatter": "Shopify.theme-check-vscode"
-    },
-    // Css
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    // Python
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    // Javascript
-    "[javascript]": {
-        // "editor.defaultFormatter": "vscode.typescript-language-features"
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "workbench.colorTheme": "Default Dark+ Experimental",
-    "indentRainbow.colors": [
-        "rgba(219,62,177,0.04)",
-        "rgba(127,255,127,0.04)",
-        "rgba(253,36,177,0.04)",
-        "rgba(0,174,239,0.04)"
-    ],
-    "editor.tokenColorCustomizations": {
-        "[Default Dark+ Experimental]": {
-            "comments": "#9bae39",
-            "functions": "#42e3ff",
-            // "keywords": "#00ff00",
-            "numbers": "#ff5e00",
-            // "strings": "#9000ff",
-            // "types": "#FF0000",
-            "variables": "#F0F696",
-            "textMateRules": [
-                {
-                    "scope": [
-                        "string.quoted.single"
-                    ],
-                    "settings": {
-                        "foreground": "#a4ff00"
-                    }
-                },
-                {
-                    "scope": [
-                        "keyword.control",
-                        "meta.function-call"
-                    ],
-                    "settings": {
-                        "foreground": "#ff00ff"
-                    }
-                },
-                {
-                    "scope": [
-                        "keyword.operator"
-                    ],
-                    "settings": {
-                        "foreground": "#00ff00"
-                    }
-                },
-                {
-                    "scope": [
-                        "storage.type"
-                    ],
-                    "settings": {
-                        "foreground": "#9000ff"
-                    }
-                },
-                {
-                    "scope": [
-                        "support.variable"
-                    ],
-                    "settings": {
-                        "foreground": "#FCB1B1"
-                    }
-                }
-            ]
-        }
+      "source.fixAll.eslint": false
     }
+  },
+  // Shopify
+  "shopifyLiquid.disableWindowsWarning": false,
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+  },
+  // Css
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  // Python
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  // Javascript
+  "[javascript]": {
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.colorTheme": "Default Dark+ Experimental",
+  "indentRainbow.colors": [
+    "rgba(219,62,177,0.04)",
+    "rgba(127,255,127,0.04)",
+    "rgba(253,36,177,0.04)",
+    "rgba(0,174,239,0.04)"
+  ],
+  "editor.tokenColorCustomizations": {
+    "[Default Dark+ Experimental]": {
+      "comments": "#9bae39",
+      "functions": "#42e3ff",
+      // "keywords": "#00ff00",
+      "numbers": "#ff5e00",
+      // "strings": "#9000ff",
+      // "types": "#FF0000",
+      "variables": "#F0F696",
+      "textMateRules": [
+        {
+          "scope": [
+            "string.quoted.single",
+          ],
+          "settings": {
+            "foreground": "#a4ff00",
+          }
+        },
+        {
+          "scope": [
+            "keyword.control",
+            "meta.function-call",
+            "entity.other.attribute-name",
+          ],
+          "settings": {
+            "foreground": "#ff00ff"
+          }
+        },
+        {
+          "scope": [
+            "keyword.operator",
+            "entity.name.tag"
+          ],
+          "settings": {
+            "foreground": "#00ff00"
+          }
+        },
+        {
+          "scope": [
+            "storage.type",
+            "entity.name",
+          ],
+          "settings": {
+            "foreground": "#9000ff"
+          }
+        },
+        {
+          "scope": [
+            "support.variable",
+            "string.quoted.double"
+          ],
+          "settings": {
+            "foreground": "#FCB1B1"
+          }
+        },
+      ]
+    }
+  },
+  "workbench.settings.enableNaturalLanguageSearch": false
 }
